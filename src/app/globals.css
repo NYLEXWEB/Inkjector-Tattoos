@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Outfit', sans-serif;
+    --font-serif: 'Cormorant Garamond', serif;
+
+    --background: 0 0% 100%; /* #FFFFFF */
+    --foreground: 0 0% 6.7%; /* #111111 */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 6.7%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 6.7%;
+    
+    --primary: 0 0% 6.7%; /* #111111 */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 40 52% 57%; /* #C8A45D - Luxury Gold */
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 60 7% 96.5%; /* #F7F7F5 */
+    --muted-foreground: 0 0% 40%;
+    
+    --accent: 40 52% 57%; /* #C8A45D */
+    --accent-foreground: 0 0% 6.7%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 89.8%; /* #E5E5E5 */
+    --input: 0 0% 89.8%;
+    --ring: 40 52% 57%;
+    
+    --radius: 0px; /* Sharp editorial design */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased overflow-x-hidden;
+    background-color: #FFFFFF;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+    color: #111111;
+  }
+}
+
+/* Lenis smooth scroll styling */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8A45D;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5924f;
+}
+
+/* Custom styles for luxury layouts */
+.text-gold {
+  color: #C8A45D;
+}
+
+.bg-gold {
+  background-color: #C8A45D;
+}
+
+.border-gold {
+  borderColor: #C8A45D;
+}
+
+.bg-cream {
+  background-color: #F7F7F5;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  color: transparent;
+}
+
+.text-stroke-black {
+  -webkit-text-stroke: 1px rgba(17, 17, 17, 0.2);
+  color: transparent;
+}
+
+/* Lightbox styles */
+.lightbox-overlay {
+  background: rgba(255, 255, 255, 0.98);
+}
