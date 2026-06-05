@@ -2,12 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ShieldCheck, Award, Leaf, Zap } from 'lucide-react'
 
-const milestones = [
-  { year: '2018', title: 'Founding Ideation', desc: 'Started crafting custom tattoo art independently, developing a signature fine line and blackwork style.' },
-  { year: '2020', title: 'Studio Inception', desc: 'Opened the private studio atelier in South India, catering to clients seeking bespoke premium art.' },
-  { year: '2022', title: 'National Recognition', desc: 'Recognized for precision realism and minimalist custom designs at prominent art conventions.' },
-  { year: '2026', title: 'Inkjector Atelier', desc: 'Evolving into a world-class luxury tattoo experience offering clinical-grade safety and award-winning bespoke aesthetics.' }
-]
 
 export default function AboutArtist() {
   return (
@@ -31,7 +25,7 @@ export default function AboutArtist() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Left Column: Typographic Experience & Credentials Card */}
-          <div className="lg:col-span-5 relative group flex flex-col justify-center items-center text-center p-12 bg-white border border-neutral-200/60 shadow-lg overflow-hidden aspect-[3/4] z-10">
+          <div className="lg:col-span-5 relative group flex flex-col justify-center items-center text-center py-16 px-6 sm:p-12 bg-white border border-neutral-200/60 shadow-lg overflow-hidden aspect-auto lg:aspect-[3/4] z-10">
             {/* Absolute accent border */}
             <div className="absolute inset-4 border border-neutral-100 pointer-events-none"></div>
             <div className="absolute inset-0 border border-[#C8A45D] translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1 group-hover:translate-y-1 pointer-events-none -z-10"></div>
@@ -134,39 +128,6 @@ export default function AboutArtist() {
           </div>
         </div>
 
-        {/* Timeline Section */}
-        <div className="mt-32 pt-16 border-t border-neutral-200/60">
-          <div className="text-center mb-16">
-            <span className="text-[10px] uppercase tracking-[0.3em] text-neutral-400 block mb-2">
-              THE CHRONICLE
-            </span>
-            <h3 className="font-serif text-3xl font-light text-neutral-950">
-              The Journey of Craftsmanship
-            </h3>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {milestones.map((item, index) => (
-              <div key={item.year} className="relative group text-left">
-                {/* Year Badge */}
-                <div className="font-serif text-4xl font-light text-[#C8A45D] mb-4 flex items-center gap-4">
-                  {item.year}
-                  <span className="h-[1px] bg-neutral-200 flex-grow md:hidden group-hover:bg-[#C8A45D] transition-colors"></span>
-                </div>
-                <h4 className="font-serif text-lg font-medium text-neutral-900 mb-2">
-                  {item.title}
-                </h4>
-                <p className="text-xs text-neutral-500 leading-relaxed font-light">
-                  {item.desc}
-                </p>
-                {/* Connecting Horizontal Line for Desktop */}
-                {index < milestones.length - 1 && (
-                  <div className="hidden md:block absolute top-[1.2rem] left-[5rem] right-[-2.5rem] h-[1px] bg-neutral-200 pointer-events-none group-hover:bg-[#C8A45D] transition-colors duration-500"></div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
 
       </div>
     </section>

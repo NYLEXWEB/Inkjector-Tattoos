@@ -8,11 +8,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 // Subcomponents
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
+import AboutUs from '@/components/AboutUs'
 import TrustBar from '@/components/TrustBar'
 import AboutArtist from '@/components/AboutArtist'
 import Specialization from '@/components/Specialization'
 import Gallery from '@/components/Gallery'
-import HorizontalShowcase from '@/components/HorizontalShowcase'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import Process from '@/components/Process'
 import Reviews from '@/components/Reviews'
@@ -73,11 +73,11 @@ export default function Home() {
       {/* Main Content Sections */}
       <main>
         <Hero />
+        <AboutUs />
         <TrustBar />
         <AboutArtist />
         <Specialization />
         <Gallery />
-        <HorizontalShowcase />
         <WhyChooseUs />
         <Process />
         <Reviews />

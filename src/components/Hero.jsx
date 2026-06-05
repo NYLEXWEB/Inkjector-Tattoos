@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen lg:h-screen flex items-center justify-center pt-24 pb-12 lg:py-0 overflow-hidden bg-white"
+      className="relative min-h-screen lg:h-screen flex items-center justify-center pt-28 pb-16 lg:py-0 overflow-hidden bg-white"
     >
       {/* Premium Background Image */}
       <div className="absolute inset-0 z-0 select-none pointer-events-none">

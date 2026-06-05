@@ -61,7 +61,7 @@ export default function Specialization() {
           {specialties.map((spec) => (
             <div
               key={spec.num}
-              className="bg-white p-10 md:p-12 hover:bg-neutral-50/50 transition-all duration-500 relative group overflow-hidden flex flex-col justify-between aspect-[4/3] text-left cursor-default"
+              className="bg-white p-8 sm:p-10 md:p-12 hover:bg-neutral-50/50 transition-all duration-500 relative group overflow-hidden flex flex-col justify-between aspect-auto lg:aspect-[4/3] text-left cursor-default"
             >
               {/* Gold Top Accent Line on Hover */}
               <div className="absolute top-0 left-0 w-0 h-[3px] bg-[#C8A45D] transition-all duration-500 group-hover:w-full"></div>

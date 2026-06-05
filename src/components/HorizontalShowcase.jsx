@@ -44,7 +44,7 @@ export default function HorizontalShowcase() {
         className="flex flex-col md:flex-row md:w-[300vw] min-h-screen relative"
       >
         {/* PANEL 1: Editorial Introduction */}
-        <div className="horizontal-panel w-full md:w-[100vw] h-screen shrink-0 flex items-center justify-center px-6 md:px-24 bg-[#111111] border-r border-neutral-800/50">
+        <div className="horizontal-panel w-full md:w-[100vw] min-h-screen md:h-screen shrink-0 flex items-center justify-center py-24 px-6 md:py-0 md:px-24 bg-[#111111] border-r border-neutral-800/50">
           <div className="max-w-4xl text-left">
             <span className="text-[11px] font-semibold tracking-[0.3em] text-[#C8A45D] uppercase block mb-6">
               THE TRANSFORMATION
@@ -64,7 +64,7 @@ export default function HorizontalShowcase() {
         </div>
 
         {/* PANEL 2: The Before (Sketch) */}
-        <div className="horizontal-panel w-full md:w-[100vw] h-screen shrink-0 flex items-center justify-center px-6 md:px-20 bg-[#151515] border-r border-neutral-800/50">
+        <div className="horizontal-panel w-full md:w-[100vw] min-h-screen md:h-screen shrink-0 flex items-center justify-center py-24 px-6 md:py-0 md:px-20 bg-[#151515] border-r border-neutral-800/50">
           <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Sketch Image */}
             <div className="relative aspect-[4/5] bg-neutral-900 border border-neutral-800 overflow-hidden shadow-2xl p-4">
@@ -105,7 +105,7 @@ export default function HorizontalShowcase() {
         </div>
 
         {/* PANEL 3: The After (Final Tattoo) */}
-        <div className="horizontal-panel w-full md:w-[100vw] h-screen shrink-0 flex items-center justify-center px-6 md:px-20 bg-[#111111]">
+        <div className="horizontal-panel w-full md:w-[100vw] min-h-screen md:h-screen shrink-0 flex items-center justify-center py-24 px-6 md:py-0 md:px-20 bg-[#111111]">
           <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Finished Tattoo Image */}
             <div className="relative aspect-[4/5] bg-neutral-900 border border-neutral-800 overflow-hidden shadow-2xl p-4">

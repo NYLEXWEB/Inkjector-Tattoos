@@ -24,7 +24,7 @@ export default function FinalCTA() {
           design your legacy
         </span>
         
-        <h2 className="font-serif text-5xl md:text-8xl font-light text-neutral-50 leading-tight">
+        <h2 className="font-serif text-4xl sm:text-5xl md:text-8xl font-light text-neutral-50 leading-tight">
           Ready For Your <br />
           <span className="italic text-[#C8A45D]">Next Tattoo?</span>
         </h2>

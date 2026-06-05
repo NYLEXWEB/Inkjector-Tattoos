@@ -189,7 +189,7 @@ export default function Gallery() {
       {/* Luxury Lightbox Overlay */}
       <AnimatePresence>
         {selectedItem && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center lightbox-overlay backdrop-blur-lg p-4">
+          <div className="fixed inset-0 z-50 flex items-center justify-center lightbox-overlay backdrop-blur-lg p-4 overflow-y-auto">
             {/* Background Closer */}
             <div
               className="absolute inset-0 cursor-zoom-out"
@@ -202,7 +202,7 @@ export default function Gallery() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.4 }}
-              className="relative bg-white border border-neutral-100 shadow-2xl max-w-5xl w-full grid grid-cols-1 md:grid-cols-12 overflow-hidden z-10"
+              className="relative bg-white border border-neutral-100 shadow-2xl max-w-5xl w-full grid grid-cols-1 md:grid-cols-12 overflow-y-auto md:overflow-hidden max-h-[90vh] md:max-h-none z-10"
             >
               {/* Close Button */}
               <button
@@ -213,11 +213,11 @@ export default function Gallery() {
               </button>
 
               {/* Left Image Section */}
-              <div className="md:col-span-7 bg-neutral-950 flex items-center justify-center relative aspect-[4/5] md:aspect-auto md:min-h-[500px]">
+              <div className="md:col-span-7 bg-neutral-950 flex items-center justify-center relative aspect-[4/3] md:aspect-auto md:min-h-[500px]">
                 <img
                   src={selectedItem.img}
                   alt={selectedItem.title}
-                  className="w-full h-full object-cover max-h-[80vh]"
+                  className="w-full h-full object-cover max-h-[45vh] md:max-h-[80vh]"
                 />
 
                 {/* Left/Right Navigation Arrows on Image */}

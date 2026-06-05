@@ -116,7 +116,7 @@ export default function Contact() {
           </div>
 
           {/* Right Column: Premium White Booking Form */}
-          <div className="lg:col-span-7 bg-[#F7F7F5] p-8 md:p-14 border border-neutral-200/60 shadow-lg relative overflow-hidden rounded-sm text-left">
+          <div className="lg:col-span-7 bg-[#F7F7F5] p-6 sm:p-8 md:p-14 border border-neutral-200/60 shadow-lg relative overflow-hidden rounded-sm text-left">
             {/* Elegant Background Grid for Form */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000002_1px,transparent_1px),linear-gradient(to_bottom,#00000002_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
 

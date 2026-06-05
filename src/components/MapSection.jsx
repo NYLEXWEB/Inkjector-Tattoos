@@ -19,12 +19,12 @@ export default function MapSection() {
         </div>
 
         {/* Map Container */}
-        <div className="relative border border-neutral-200 shadow-xl overflow-hidden aspect-[16/9] md:aspect-[21/9] w-full">
+        <div className="relative border border-neutral-200 shadow-xl overflow-hidden flex flex-col md:block w-full md:aspect-[21/9]">
           
           {/* Full Color Google Map Iframe */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15651.986348325992!2d75.87702844837865!3d11.261685419998246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65da70979dcf3%3A0xc3676cf2377b8cf6!2sCherukulathoor%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000"
-            className="w-full h-full border-0"
+            className="w-full h-[300px] md:h-full border-0 md:min-h-[450px]"
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -32,7 +32,7 @@ export default function MapSection() {
           ></iframe>
 
           {/* Floating Atelier Card */}
-          <div className="absolute bottom-6 left-6 md:bottom-8 md:left-8 bg-white/95 backdrop-blur-md p-6 border border-neutral-200/60 max-w-sm text-left shadow-2xl z-10">
+          <div className="relative md:absolute md:bottom-8 md:left-8 bg-white/95 backdrop-blur-md p-6 border-t md:border border-neutral-200/60 w-full md:max-w-sm text-left shadow-2xl z-10">
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 border border-[#C8A45D]/20 flex items-center justify-center text-[#C8A45D] shrink-0 mt-0.5">
                 <MapPin className="h-5 w-5" />

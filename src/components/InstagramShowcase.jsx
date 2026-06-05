@@ -26,7 +26,7 @@ export default function InstagramShowcase() {
       </div>
 
       {/* Infinite Scroll Container */}
-      <div className="flex w-[200vw] overflow-hidden relative select-none">
+      <div className="flex w-full overflow-hidden relative select-none">
         {/* Marquee Track */}
         <div className="flex animate-marquee whitespace-nowrap">
           {doublePosts.map((post, idx) => (
