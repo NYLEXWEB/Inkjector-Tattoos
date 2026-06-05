@@ -20,7 +20,7 @@ export default function AboutUs() {
                 className="w-[70%] aspect-[3/4.2] overflow-hidden shadow-xl border border-neutral-200/40 bg-neutral-100"
               >
                 <img
-                  src="/images/gallery/file_00000000db2471fa96611d2fc95168eb.png"
+                  src="/file_00000000db2471fa96611d2fc95168eb.png"
                   alt="Bespoke Tattoo Forearm Art Calicut"
                   className="w-full h-full object-cover grayscale contrast-[1.12]"
                 />
