@@ -1,9 +1,5 @@
-"use client"
-
-import React, { useEffect } from 'react'
-import Lenis from 'lenis'
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import React from 'react'
+import ClientLayout from '@/components/ClientLayout'
 
 // Subcomponents
 import Navbar from '@/components/Navbar'
@@ -24,75 +20,68 @@ import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
 import FloatingWhatsapp from '@/components/FloatingWhatsapp'
 
-// Register GSAP ScrollTrigger
-gsap.registerPlugin(ScrollTrigger)
+// JSON-LD Schemas
+import JsonLd from '@/components/SEO/JsonLd'
+
+export const metadata = {
+  title: 'Inkjector Tattoos | Premium Tattoo Studio in Kozhikode Kerala',
+  description: 'Inkjector Tattoos is a high-end luxury tattoo studio led by master artist Akhil Saju in Kozhikode (Calicut), Kerala. We specialize in custom-tailored realism, geometric blackwork, fine-line, and safe cover-up tattoos in a sterile, private atelier.',
+  keywords: [
+    'tattoo studio kozhikode',
+    'best tattoo studio kozhikode',
+    'tattoo shop kozhikode',
+    'tattoo artist kozhikode',
+    'best tattoo artist kozhikode',
+    'tattoo studio calicut',
+    'tattoo shop calicut',
+    'best tattoo studio kerala',
+    'professional tattoo studio kerala',
+    'custom tattoo kerala',
+    'realistic tattoo kerala',
+    'portrait tattoo kozhikode',
+    'inkjector tattoos',
+    'inkjector tattoos kozhikode',
+    'inkjector tattoo studio'
+  ],
+  alternates: {
+    canonical: 'https://www.inkjectortattoos.com',
+  },
+}
 
 export default function Home() {
-  useEffect(() => {
-    // Initialize Lenis Smooth Scroll
-    const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      orientation: 'vertical',
-      gestureOrientation: 'vertical',
-      smoothWheel: true,
-      wheelMultiplier: 1,
-      touchMultiplier: 2,
-    })
-
-    // Connect Lenis scroll events to GSAP ScrollTrigger
-    lenis.on('scroll', ScrollTrigger.update)
-
-    gsap.ticker.add((time) => {
-      lenis.raf(time * 1000)
-    })
-
-    gsap.ticker.lagSmoothing(0)
-
-    // Scroll to hash links on initial load if present
-    if (window.location.hash) {
-      const target = document.querySelector(window.location.hash)
-      if (target) {
-        setTimeout(() => {
-          lenis.scrollTo(target, { offset: -50 })
-        }, 500)
-      }
-    }
-
-    return () => {
-      lenis.destroy()
-      gsap.ticker.remove(lenis.raf)
-    }
-  }, [])
-
   return (
-    <div className="min-h-screen bg-white text-neutral-900 selection:bg-[#C8A45D]/30 selection:text-neutral-900">
-      {/* Navigation */}
-      <Navbar />
+    <ClientLayout>
+      <div className="min-h-screen bg-white text-neutral-900 selection:bg-[#C8A45D]/30 selection:text-neutral-900">
+        {/* Navigation */}
+        <Navbar />
 
-      {/* Main Content Sections */}
-      <main>
-        <Hero />
-        <AboutUs />
-        <TrustBar />
-        <AboutArtist />
-        <Specialization />
-        <Gallery />
-        <WhyChooseUs />
-        <Process />
-        <Reviews />
-        <FAQ />
-        <Contact />
-        <MapSection />
-        <InstagramShowcase />
-        <FinalCTA />
-      </main>
+        {/* Global Structured Data JSON-LD */}
+        <JsonLd type="all" />
 
-      {/* Footer */}
-      <Footer />
+        {/* Main Content Sections */}
+        <main>
+          <Hero />
+          <AboutUs />
+          <TrustBar />
+          <AboutArtist />
+          <Specialization />
+          <Gallery />
+          <WhyChooseUs />
+          <Process />
+          <Reviews />
+          <FAQ />
+          <Contact />
+          <MapSection />
+          <InstagramShowcase />
+          <FinalCTA />
+        </main>
 
-      {/* Floating Call to Action */}
-      <FloatingWhatsapp />
-    </div>
+        {/* Footer */}
+        <Footer />
+
+        {/* Floating Call to Action */}
+        <FloatingWhatsapp />
+      </div>
+    </ClientLayout>
   )
 }

@@ -1,4 +1,7 @@
+"use client"
+
 import React, { useState } from 'react'
+import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Dialog, DialogContent } from './ui/dialog'
@@ -8,98 +11,98 @@ const galleryItems = [
     id: 1,
     category: 'Sleeve',
     title: 'The Sacred Geometry Sleeve',
-    img: '/images/gallery/file_00000000260c7209b4d1409317a86835.png',
+    img: '/images/gallery/sacred-geometry-sleeve-tattoo-kerala.png',
     desc: 'Bespoke full-arm sacred geometry sleeve with detailed mandala nodes, dot shading, and custom anatomical flow.',
   },
   {
     id: 2,
     category: 'Minimal',
     title: 'Botanical Harmony',
-    img: '/images/gallery/SAVE_20260605_132803.jpg',
+    img: '/images/gallery/fine-line-botanical-wrist-tattoo.jpg',
     desc: 'Fine-line botanical illustration on the wrist, featuring elegant organic stems and subtle leaves.',
   },
   {
     id: 3,
     category: 'Portrait',
     title: 'Classical Hellenistic Portrait',
-    img: '/images/gallery/file_0000000037047206b955e35f8d86dc72.png',
+    img: '/images/gallery/classical-greek-portrait-tattoo.png',
     desc: 'High-realism black and grey shading capturing the timeless proportions of classical Greek sculpture.',
   },
   {
     id: 4,
     category: 'Blackwork',
     title: 'The Mandala Alignment',
-    img: '/images/gallery/file_0000000043a87209a53d8093cfd3de7f.png',
+    img: '/images/gallery/mandala-dotwork-backwork-tattoo.png',
     desc: 'Complex geometric mandala aligned to the body, utilizing dense black inks and high contrast patterns.',
   },
   {
     id: 5,
     category: 'Custom',
     title: 'Abstract Flowing Linework',
-    img: '/images/gallery/file_000000004b8c7209b4e10ed31f3d3435.png',
+    img: '/images/gallery/abstract-linework-wrist-tattoo.png',
     desc: 'Minimalist custom flow lines mapped to anatomy, embodying fluid energy and luxury design lines.',
   },
   {
     id: 6,
     category: 'Sleeve',
     title: 'Neo-Geometric Forearm',
-    img: '/images/gallery/file_000000006b847209a52778b9d97ce9e6.png',
+    img: '/images/gallery/neo-geometric-forearm-sleeve-tattoo.png',
     desc: 'Intricate custom geometric mandala forearm tattoo featuring detailed line weight variations and precise dotwork on rich Indian skin tones.',
   },
   {
     id: 7,
     category: 'Custom',
     title: 'Bespoke Ornamental Florals',
-    img: '/images/gallery/file_00000000779072078ee5513f96324fda.png',
+    img: '/images/gallery/ornamental-floral-shoulder-tattoo.png',
     desc: 'Elegant fine-line floral illustration cascading down the shoulder and upper arm, highlighting natural curves and high-end aesthetic details.',
   },
   {
     id: 8,
     category: 'Blackwork',
     title: 'Symmetric Mandala Alignment',
-    img: '/images/gallery/file_00000000d2e072098c5b238b9ce3be4b.png',
+    img: '/images/gallery/symmetric-mandala-chest-tattoo.png',
     desc: 'Bespoke symmetrical mandala showcasing precision dotwork and high-contrast linework tailored to natural contours.',
   },
   {
     id: 9,
     category: 'Minimal',
     title: 'Fine-Line Lotus Petal',
-    img: '/images/gallery/SAVE_20260605_134529.jpg',
+    img: '/images/gallery/fine-line-lotus-petal-tattoo.jpg',
     desc: 'Minimalist fine-line lotus detail focusing on purity, geometry, and delicate curves.',
   },
   {
     id: 10,
     category: 'Portrait',
     title: 'Neoclassical Bust Shading',
-    img: '/images/gallery/SAVE_20260605_134536.jpg',
+    img: '/images/gallery/neoclassical-bust-portrait-tattoo.jpg',
     desc: 'Realistic black and grey portrait piece capturing the fine textures and dramatic lighting of neoclassical art.',
   },
   {
     id: 11,
     category: 'Custom',
     title: 'Traditional Geometric Patch',
-    img: '/images/gallery/SAVE_20260605_134543.jpg',
+    img: '/images/gallery/bold-geometric-blackwork-patch-tattoo.jpg',
     desc: 'Bold blackwork tattoo piece focusing on heavy geometric blocks, fine dot patterns, and sharp contrast boundaries.',
   },
   {
     id: 12,
     category: 'Piercing',
     title: 'Double Helix Curated Piercing',
-    img: '/images/piercing/file_00000000226c720983a345bae38b22f6.png',
+    img: '/images/piercing/double-helix-ear-piercing-calicut.png',
     desc: 'Clean curated double helix project utilizing luxury solid gold studs for a sophisticated ear stack.',
   },
   {
     id: 13,
     category: 'Piercing',
     title: 'Precision Septum Clicker',
-    img: '/images/piercing/file_00000000b368720686989ec032e33513.png',
+    img: '/images/piercing/precision-septum-piercing-kerala.png',
     desc: 'Perfect symmetry septum piercing styled with a solid titanium seamless ring.',
   },
   {
     id: 14,
     category: 'Piercing',
     title: 'Curated Helix Placement',
-    img: '/images/piercing/no.png',
+    img: '/images/piercing/curated-tragus-conch-piercing-titanium.png',
     desc: 'Premium tragus and conch piercing combo featuring custom-selected internally threaded studs.',
   },
 ]
@@ -179,10 +182,12 @@ export default function Gallery() {
               >
                 {/* Image Container with Hover Scale */}
                 <div className="aspect-[3/4] w-full overflow-hidden relative">
-                  <img
+                  <Image
                     src={item.img}
-                    alt={item.title}
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    alt={`${item.title} - Custom Tattoo Art at Inkjector Tattoos Kozhikode Kerala`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   {/* Luxury Dark Overlay */}
                   <div className="absolute inset-0 bg-neutral-900/10 group-hover:bg-neutral-900/40 transition-colors duration-500 flex items-center justify-center">
@@ -235,10 +240,12 @@ export default function Gallery() {
 
               {/* Left Image Section */}
               <div className="md:col-span-7 bg-neutral-950 flex items-center justify-center relative aspect-[4/3] md:aspect-auto md:min-h-[500px]">
-                <img
+                <Image
                   src={selectedItem.img}
-                  alt={selectedItem.title}
-                  className="w-full h-full object-cover max-h-[45vh] md:max-h-[80vh]"
+                  alt={`${selectedItem.title} - Portrayed by Akhil Saju at Inkjector Tattoos Calicut`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 60vw"
+                  className="object-cover max-h-[45vh] md:max-h-[80vh]"
                 />
 
                 {/* Left/Right Navigation Arrows on Image */}

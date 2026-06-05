@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const studioSections = [
   {
@@ -58,11 +58,13 @@ export default function StudioExperience() {
                   index % 2 === 1 ? 'lg:order-last' : ''
                 }`}
               >
-                <div className="aspect-[16/10] overflow-hidden bg-neutral-50 relative">
-                  <img
+                <div className="aspect-[16/10] overflow-hidden bg-neutral-50 relative w-full">
+                  <Image
                     src={sect.img}
-                    alt={sect.name}
-                    className="w-full h-full object-cover transform group-hover:scale-103 transition-transform duration-700 ease-out"
+                    alt={`${sect.name} - Safe Tattoo Studio Kozhikode Calicut`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 55vw"
+                    className="object-cover transform group-hover:scale-103 transition-transform duration-700 ease-out"
                   />
                   {/* Floating Number Overlay */}
                   <div className="absolute bottom-6 right-6 font-serif text-4xl text-white/50 select-none">

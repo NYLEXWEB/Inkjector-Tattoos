@@ -1,14 +1,13 @@
+"use client"
+
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowUp } from 'lucide-react'
 
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
-  const handleNavClick = (e, href) => {
-    e.preventDefault()
-    document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -18,10 +17,12 @@ export default function Footer() {
           
           {/* Column 1: Logo & Philosophy */}
           <div className="lg:col-span-5 text-left space-y-6">
-            <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="flex items-center gap-3 group">
-              <img
+            <Link href="/" className="flex items-center gap-3 group">
+              <Image
                 src="/logo.png"
                 alt="Inkjector Tattoos Logo"
+                width={44}
+                height={44}
                 className="h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
               <div className="flex flex-col items-center pt-0.5">
@@ -35,9 +36,9 @@ export default function Footer() {
                   <div className="h-[1px] w-12 bg-gradient-to-l from-transparent via-[#C8A45D]/40 to-[#C8A45D]/40"></div>
                 </div>
               </div>
-            </a>
+            </Link>
             <p className="text-neutral-500 text-xs sm:text-sm font-light leading-relaxed max-w-sm">
-              Bespoke private tattoo studio based in India, dedicated to the curation of highly sophisticated, anatomically-mapped custom tattoos. Led by Akhil Saju.
+              Bespoke private tattoo studio based in Kozhikode, Kerala, dedicated to the curation of highly sophisticated, anatomically-mapped custom tattoos. Led by Akhil Saju.
             </p>
           </div>
 
@@ -47,11 +48,11 @@ export default function Footer() {
               Specialties
             </h4>
             <ul className="space-y-2 text-xs text-neutral-500 font-light font-sans">
-              <li className="hover:text-neutral-900 transition-colors cursor-pointer">Blackwork Geometry</li>
-              <li className="hover:text-neutral-900 transition-colors cursor-pointer">Precision Realism</li>
-              <li className="hover:text-neutral-900 transition-colors cursor-pointer">Fine-Line Botanicals</li>
-              <li className="hover:text-neutral-900 transition-colors cursor-pointer">Anatomical Sleevwork</li>
-              <li className="hover:text-neutral-900 transition-colors cursor-pointer">Premium Cover-Ups</li>
+              <li className="hover:text-neutral-900 transition-colors">Blackwork Geometry</li>
+              <li className="hover:text-neutral-900 transition-colors">Precision Realism</li>
+              <li className="hover:text-neutral-900 transition-colors">Fine-Line Botanicals</li>
+              <li className="hover:text-neutral-900 transition-colors">Anatomical Sleevwork</li>
+              <li className="hover:text-neutral-900 transition-colors">Premium Cover-Ups</li>
             </ul>
           </div>
 
@@ -62,29 +63,34 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-neutral-500 font-light font-sans">
               <li>
-                <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="hover:text-neutral-900 transition-colors">
+                <Link href="/" className="hover:text-neutral-900 transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#artist" onClick={(e) => handleNavClick(e, '#artist')} className="hover:text-neutral-900 transition-colors">
+                <Link href="/about" className="hover:text-neutral-900 transition-colors">
                   Artist Profile
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#gallery" onClick={(e) => handleNavClick(e, '#gallery')} className="hover:text-neutral-900 transition-colors">
+                <Link href="/services" className="hover:text-neutral-900 transition-colors">
+                  Tattoo Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/gallery" className="hover:text-neutral-900 transition-colors">
                   Portfolio Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#process" onClick={(e) => handleNavClick(e, '#process')} className="hover:text-neutral-900 transition-colors">
-                  Tattoo Process
-                </a>
+                <Link href="/aftercare" className="hover:text-neutral-900 transition-colors">
+                  Aftercare Guide
+                </Link>
               </li>
               <li>
-                <a href="#reviews" onClick={(e) => handleNavClick(e, '#reviews')} className="hover:text-neutral-900 transition-colors">
-                  Client Reviews
-                </a>
+                <Link href="/blog" className="hover:text-neutral-900 transition-colors">
+                  Tattoo Blog
+                </Link>
               </li>
             </ul>
           </div>
@@ -96,7 +102,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-neutral-500 font-light font-sans">
               <li className="hover:text-neutral-900 transition-colors">
-                <a href="tel:8086612111">8086612111</a>
+                <a href="tel:8086612111">+91 80866 12111</a>
               </li>
               <li className="hover:text-neutral-900 transition-colors">
                 <a href="mailto:inkjectortattoos@gmail.com">inkjectortattoos@gmail.com</a>
@@ -118,12 +124,12 @@ export default function Footer() {
           </div>
           
           <div className="flex gap-8 text-[10px] text-neutral-400 tracking-wider font-sans">
-            <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="hover:text-neutral-900 transition-colors">
+            <Link href="/" className="hover:text-neutral-900 transition-colors">
               PRIVACY POLICY
-            </a>
-            <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="hover:text-neutral-900 transition-colors">
+            </Link>
+            <Link href="/" className="hover:text-neutral-900 transition-colors">
               TERMS OF SERVICE
-            </a>
+            </Link>
           </div>
 
           <button

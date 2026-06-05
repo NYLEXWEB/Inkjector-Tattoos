@@ -60,6 +60,8 @@ function DialogContent({
           className
         )}
         {...props}>
+        <DialogTitle className="sr-only">Dialog</DialogTitle>
+        <DialogDescription className="sr-only">Tattoo details and portfolio description</DialogDescription>
         {children}
         {showCloseButton && (
           <DialogPrimitive.Close data-slot="dialog-close" asChild>

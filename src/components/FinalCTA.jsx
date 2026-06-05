@@ -1,20 +1,19 @@
 import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 export default function FinalCTA() {
-  const handleCTAClick = (e) => {
-    e.preventDefault()
-    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
-  }
-
   return (
     <section className="relative py-32 md:py-48 overflow-hidden bg-[#111111] text-white">
       {/* Background Image with heavy parallax styling and dark overlay */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/images/studio/workstation.png"
-          alt="Studio Background"
-          className="w-full h-full object-cover opacity-20 scale-105"
+          alt="Studio Background Workstation by Inkjector Tattoos Kozhikode"
+          fill
+          sizes="100vw"
+          className="object-cover opacity-20 scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/80 to-[#111111]/90"></div>
       </div>
@@ -34,14 +33,13 @@ export default function FinalCTA() {
         </p>
 
         <div className="pt-6">
-          <a
-            href="#contact"
-            onClick={handleCTAClick}
+          <Link
+            href="/contact"
             className="inline-flex items-center justify-center px-10 py-5 bg-[#C8A45D] text-white text-xs uppercase tracking-[0.25em] font-semibold hover:bg-white hover:text-black transition-all duration-300 group shadow-2xl border border-[#C8A45D]"
           >
             Request Appointment
             <ArrowRight className="ml-3 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

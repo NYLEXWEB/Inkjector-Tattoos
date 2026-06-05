@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -67,14 +68,16 @@ export default function HorizontalShowcase() {
         <div className="horizontal-panel w-full md:w-[100vw] min-h-screen md:h-screen shrink-0 flex items-center justify-center py-24 px-6 md:py-0 md:px-20 bg-[#151515] border-r border-neutral-800/50">
           <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Sketch Image */}
-            <div className="relative aspect-[4/5] bg-neutral-900 border border-neutral-800 overflow-hidden shadow-2xl p-4">
+            <div className="relative aspect-[4/5] bg-neutral-900 border border-neutral-800 overflow-hidden shadow-2xl p-4 w-full">
               <div className="absolute top-8 left-8 z-10 px-3 py-1 bg-neutral-950/80 backdrop-blur border border-neutral-700 text-[10px] uppercase tracking-widest text-[#C8A45D]">
                 STAGE 01: THE CONCEPT
               </div>
-              <img
+              <Image
                 src="/images/process/sketch.png"
-                alt="Original Hand Drawn Sketch"
-                className="w-full h-full object-cover"
+                alt="Original Hand Drawn Sketch of Geometric Design in Calicut Studio"
+                fill
+                sizes="(max-width: 768px) 100vw, 40vw"
+                className="object-cover"
               />
             </div>
 
@@ -108,14 +111,16 @@ export default function HorizontalShowcase() {
         <div className="horizontal-panel w-full md:w-[100vw] min-h-screen md:h-screen shrink-0 flex items-center justify-center py-24 px-6 md:py-0 md:px-20 bg-[#111111]">
           <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Finished Tattoo Image */}
-            <div className="relative aspect-[4/5] bg-neutral-900 border border-neutral-800 overflow-hidden shadow-2xl p-4">
+            <div className="relative aspect-[4/5] bg-neutral-900 border border-neutral-800 overflow-hidden shadow-2xl p-4 w-full">
               <div className="absolute top-8 left-8 z-10 px-3 py-1 bg-neutral-950/80 backdrop-blur border border-neutral-700 text-[10px] uppercase tracking-widest text-[#C8A45D]">
                 STAGE 02: THE EXECUTION
               </div>
-              <img
+              <Image
                 src="/images/process/tattoo_final.png"
-                alt="Final Completed Tattoo"
-                className="w-full h-full object-cover"
+                alt="Final Completed Geometric Tattoo Design in Kozhikode Kerala"
+                fill
+                sizes="(max-width: 768px) 100vw, 40vw"
+                className="object-cover"
               />
             </div>
 

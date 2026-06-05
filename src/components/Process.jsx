@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { motion } from 'framer-motion'
 import { MessageSquare, PenTool, CheckCircle2, Award, HeartHandshake } from 'lucide-react'

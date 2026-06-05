@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react'
 import { Phone, Mail, Instagram, Clock, ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'

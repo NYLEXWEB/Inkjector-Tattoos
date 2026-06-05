@@ -1,12 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
 import { Instagram, Heart, MessageCircle } from 'lucide-react'
 
 const instaPosts = [
-  { img: '/images/gallery/file_0000000000c4720789f83f9c3a7307d4.png', likes: '342', comments: '18' },
-  { img: '/images/gallery/minimal.png', likes: '512', comments: '34' },
-  { img: '/images/gallery/file_0000000010cc71fa86eabdd7733ae6b0.png', likes: '289', comments: '12' },
-  { img: '/images/gallery/file_00000000779072078ee5513f96324fda.png', likes: '423', comments: '22' },
-  { img: '/images/process/tattoo_final.png', likes: '671', comments: '45' },
+  { img: '/images/gallery/custom-geometric-tattoo-kozhikode.png', likes: '342', comments: '18', alt: 'Custom Geometric Tattoo Kozhikode by Akhil Saju' },
+  { img: '/images/gallery/minimal.png', likes: '512', comments: '34', alt: 'Minimalist Line Tattoo Calicut' },
+  { img: '/images/gallery/realistic-forearm-tattoo-calicut.png', likes: '289', comments: '12', alt: 'Realistic Forearm Tattoo Calicut at Inkjector Tattoos' },
+  { img: '/images/gallery/ornamental-floral-shoulder-tattoo.png', likes: '423', comments: '22', alt: 'Ornamental Floral Shoulder Tattoo Kerala' },
+  { img: '/images/process/tattoo_final.png', likes: '671', comments: '45', alt: 'Master Artist Akhil Saju completing a custom tattoo design' },
 ]
 
 export default function InstagramShowcase() {
@@ -38,10 +39,12 @@ export default function InstagramShowcase() {
               className="relative w-[300px] h-[300px] inline-block shrink-0 overflow-hidden group mx-4 border border-neutral-800"
             >
               {/* Image */}
-              <img
+              <Image
                 src={post.img}
-                alt="Instagram post"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                alt={post.alt}
+                fill
+                sizes="300px"
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
 
               {/* Hover Details Overlay */}
