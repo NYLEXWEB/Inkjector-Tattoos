@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import { Instagram, Heart, MessageCircle } from 'lucide-react'
+import { Heart, MessageCircle } from 'lucide-react'
+import { FaInstagram } from 'react-icons/fa6'
 
 const instaPosts = [
   { img: '/images/gallery/custom-geometric-tattoo-kozhikode.png', likes: '342', comments: '18', alt: 'Custom Geometric Tattoo Kozhikode by Akhil Saju' },
@@ -49,7 +50,7 @@ export default function InstagramShowcase() {
 
               {/* Hover Details Overlay */}
               <div className="absolute inset-0 bg-neutral-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-4">
-                <Instagram className="h-6 w-6 text-[#C8A45D]" />
+                <FaInstagram className="h-6 w-6 text-[#C8A45D]" />
                 <div className="flex gap-6 text-sm font-semibold">
                   <div className="flex items-center gap-1.5 text-white">
                     <Heart className="h-4 w-4 fill-current text-white" />

@@ -1,8 +1,9 @@
 "use client"
 
 import React, { useState } from 'react'
-import { Phone, Mail, Instagram, Clock, ArrowRight } from 'lucide-react'
+import { Phone, Mail, Clock, ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa6'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -68,8 +69,26 @@ export default function Contact() {
                     <Phone className="h-4 w-4" />
                   </div>
                   <div>
-                    <span className="text-[8px] uppercase tracking-widest text-neutral-400 block font-semibold">CALL / WHATSAPP</span>
+                    <span className="text-[8px] uppercase tracking-widest text-neutral-400 block font-semibold">CALL ENQUIRIES</span>
                     <span className="text-sm font-medium text-neutral-800 tracking-wider">8086612111</span>
+                  </div>
+                </div>
+                <ArrowRight className="h-4 w-4 text-neutral-300 group-hover:text-[#C8A45D] group-hover:translate-x-1 transition-all duration-300" />
+              </a>
+
+              <a
+                href="https://wa.me/918086612111?text=Hi%20Inkjector%20Tattoos,%20I%20would%20like%20to%20inquire%20about%20booking%20a%20tattoo%20session."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-5 border border-neutral-100 hover:border-neutral-900 transition-all duration-300 group"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-9 h-9 border border-neutral-200 flex items-center justify-center text-[#C8A45D] shrink-0 group-hover:border-[#C8A45D] group-hover:bg-[#C8A45D] group-hover:text-white transition-all duration-300">
+                    <FaWhatsapp className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <span className="text-[8px] uppercase tracking-widest text-neutral-400 block font-semibold">WHATSAPP CHAT</span>
+                    <span className="text-sm font-medium text-neutral-800 tracking-wider">+91 80866 12111</span>
                   </div>
                 </div>
                 <ArrowRight className="h-4 w-4 text-neutral-300 group-hover:text-[#C8A45D] group-hover:translate-x-1 transition-all duration-300" />
@@ -99,7 +118,7 @@ export default function Contact() {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-9 h-9 border border-neutral-200 flex items-center justify-center text-[#C8A45D] shrink-0 group-hover:border-[#C8A45D] group-hover:bg-[#C8A45D] group-hover:text-white transition-all duration-300">
-                    <Instagram className="h-4 w-4" />
+                    <FaInstagram className="h-4 w-4" />
                   </div>
                   <div>
                     <span className="text-[8px] uppercase tracking-widest text-neutral-400 block font-semibold">INSTAGRAM</span>
