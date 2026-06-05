@@ -81,9 +81,58 @@ const galleryItems = [
     img: '/images/gallery/file_00000000c7b872078fb6bc4a4f7f1357.png',
     desc: 'Bold blackwork tattoo piece focusing on heavy geometric blocks, fine dot patterns, and sharp contrast boundaries.',
   },
+  {
+    id: 12,
+    category: 'Custom',
+    title: 'Bespoke Concept Piece',
+    img: '/images/gallery/new_tattoo_1.png',
+    desc: 'A custom designed concept piece, custom-tailored to highlight personal narrative lines.',
+  },
+  {
+    id: 13,
+    category: 'Minimal',
+    title: 'Micro Fine-Line Script',
+    img: '/images/gallery/new_tattoo_2.png',
+    desc: 'Elegant, ultra-thin precision script lettering mapped along the inner arm.',
+  },
+  {
+    id: 14,
+    category: 'Portrait',
+    title: 'Hyper-Realistic Eye',
+    img: '/images/gallery/new_tattoo_3.png',
+    desc: 'An intricate, hyper-focused realism portrait study showcasing reflections and precise skin textures.',
+  },
+  {
+    id: 15,
+    category: 'Piercing',
+    title: 'Double Helix Curated Piercing',
+    img: '/images/piercing/piercing1.png',
+    desc: 'Clean curated double helix project utilizing luxury solid gold studs for a sophisticated ear stack.',
+  },
+  {
+    id: 16,
+    category: 'Piercing',
+    title: 'Precision Septum Clicker',
+    img: '/images/piercing/piercing2.png',
+    desc: 'Perfect symmetry septum piercing styled with a solid titanium seamless ring.',
+  },
+  {
+    id: 17,
+    category: 'Piercing',
+    title: 'Tragus & Conch Placement',
+    img: '/images/piercing/piercing3.png',
+    desc: 'Premium tragus and conch piercing combo featuring custom-selected internally threaded studs.',
+  },
+  {
+    id: 18,
+    category: 'Piercing',
+    title: 'Nostril Stud Alignment',
+    img: '/images/piercing/piercing4.png',
+    desc: 'Minimalist nostril piercing aligned precisely with anatomical creases, utilizing a fine diamond accent.',
+  },
 ]
 
-const categories = ['All', 'Sleeve', 'Portrait', 'Minimal', 'Blackwork', 'Custom']
+const categories = ['All', 'Sleeve', 'Portrait', 'Minimal', 'Blackwork', 'Custom', 'Piercing']
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('All')
