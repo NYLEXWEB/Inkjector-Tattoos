@@ -44,7 +44,7 @@ export const metadata = {
     },
   },
   icons: {
-    icon: '/favicon.svg',
+    icon: '/logo.png',
   },
   openGraph: {
     title: 'Inkjector Tattoos | Premium Tattoo Studio in Kozhikode Kerala',
