@@ -16,7 +16,6 @@ import HorizontalShowcase from '@/components/HorizontalShowcase'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import Process from '@/components/Process'
 import Reviews from '@/components/Reviews'
-import StudioExperience from '@/components/StudioExperience'
 import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import MapSection from '@/components/MapSection'
@@ -82,7 +81,6 @@ export default function Home() {
         <WhyChooseUs />
         <Process />
         <Reviews />
-        <StudioExperience />
         <FAQ />
         <Contact />
         <MapSection />

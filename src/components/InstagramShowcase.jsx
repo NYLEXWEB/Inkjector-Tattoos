@@ -2,12 +2,11 @@ import React from 'react'
 import { Instagram, Heart, MessageCircle } from 'lucide-react'
 
 const instaPosts = [
-  { img: '/images/gallery/sleeve.png', likes: '342', comments: '18' },
+  { img: '/images/gallery/file_0000000000c4720789f83f9c3a7307d4.png', likes: '342', comments: '18' },
   { img: '/images/gallery/minimal.png', likes: '512', comments: '34' },
-  { img: '/images/gallery/portrait.png', likes: '289', comments: '12' },
-  { img: '/images/gallery/custom.png', likes: '423', comments: '22' },
+  { img: '/images/gallery/file_0000000010cc71fa86eabdd7733ae6b0.png', likes: '289', comments: '12' },
+  { img: '/images/gallery/file_00000000779072078ee5513f96324fda.png', likes: '423', comments: '22' },
   { img: '/images/process/tattoo_final.png', likes: '671', comments: '45' },
-  { img: '/images/hero/tattoo_hero.png', likes: '893', comments: '67' }
 ]
 
 export default function InstagramShowcase() {
