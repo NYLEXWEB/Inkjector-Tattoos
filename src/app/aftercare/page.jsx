@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingWhatsapp from '@/components/FloatingWhatsapp'
 import BreadcrumbSchema from '@/components/SEO/BreadcrumbSchema'
+import AftercareTracker from '@/components/AftercareTracker'
 
 export const metadata = {
   title: 'Tattoo Aftercare Guide | How to Heal a New Tattoo Calicut',
@@ -48,6 +49,9 @@ export default function AftercarePage() {
             <p className="text-lg text-neutral-600 font-light leading-relaxed font-sans">
               The lifespan and vibrancy of your bespoke body ornamentation depend heavily on how it is cared for during the first critical weeks. A masterfully applied tattoo is only fifty percent of the equation—the remaining fifty percent lies in strict adherence to scientific aftercare.
             </p>
+
+            {/* Interactive Tracker Widget */}
+            <AftercareTracker />
 
             {/* Phase 1 */}
             <div className="space-y-4 border-t border-neutral-100 pt-8">
