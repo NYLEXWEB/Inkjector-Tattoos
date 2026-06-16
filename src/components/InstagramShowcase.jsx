@@ -4,11 +4,16 @@ import { Heart, MessageCircle } from 'lucide-react'
 import { FaInstagram } from 'react-icons/fa6'
 
 const instaPosts = [
-  { img: '/images/gallery/custom-geometric-tattoo-kozhikode.png', likes: '342', comments: '18', alt: 'Custom Geometric Tattoo Kozhikode by Akhil Saju' },
-  { img: '/images/gallery/minimal.png', likes: '512', comments: '34', alt: 'Minimalist Line Tattoo Calicut' },
-  { img: '/images/gallery/realistic-forearm-tattoo-calicut.png', likes: '289', comments: '12', alt: 'Realistic Forearm Tattoo Calicut at Inkjector Tattoos' },
-  { img: '/images/gallery/ornamental-floral-shoulder-tattoo.png', likes: '423', comments: '22', alt: 'Ornamental Floral Shoulder Tattoo Kerala' },
-  { img: '/images/process/tattoo_final.png', likes: '671', comments: '45', alt: 'Master Artist Akhil Saju completing a custom tattoo design' },
+  { img: '/images/gallery/sacred-geometry-sleeve-tattoo-kerala.jpg', likes: '342', comments: '18', alt: 'Custom Geometric Tattoo Kozhikode by Akhil Saju' },
+  { img: '/images/gallery/fine-line-botanical-wrist-tattoo.jpg', likes: '412', comments: '25', alt: 'Delicate Floral Line Tattoo Kozhikode' },
+  { img: '/images/gallery/classical-greek-portrait-tattoo.jpg', likes: '512', comments: '34', alt: 'Hyper-Realistic Portrait Calicut' },
+  { img: '/images/gallery/mandala-dotwork-backwork-tattoo.jpg', likes: '389', comments: '19', alt: 'Mandala Sacred Alignment Tattoo' },
+  { img: '/images/gallery/abstract-linework-wrist-tattoo.jpg', likes: '445', comments: '28', alt: 'Abstract Geometric Shading Tattoo' },
+  { img: '/images/gallery/neo-geometric-forearm-sleeve-tattoo.jpg', likes: '289', comments: '12', alt: 'Symmetrical Mandala Sleeve at Inkjector Tattoos' },
+  { img: '/images/gallery/ornamental-floral-shoulder-tattoo.jpg', likes: '504', comments: '31', alt: 'Celestial Harmony Minimalist Tattoo' },
+  { img: '/images/gallery/symmetric-mandala-chest-tattoo.jpg', likes: '423', comments: '22', alt: 'Neoclassical Sculpture Tattoo Kerala' },
+  { img: '/images/gallery/fine-line-lotus-petal-tattoo.jpg', likes: '376', comments: '15', alt: 'Dark Ornamental Mandala Tattoo Calicut' },
+  { img: '/images/gallery/neoclassical-bust-portrait-tattoo.jpg', likes: '492', comments: '27', alt: 'Biomechanical Linework Custom Tattoo' },
 ]
 
 export default function InstagramShowcase() {

@@ -1,4 +1,20 @@
+import { Cormorant_Garamond, Outfit } from 'next/font/google'
 import './globals.css'
+
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+  display: 'swap',
+})
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  weight: ['200', '300', '400', '500', '600', '700'],
+  variable: '--font-sans',
+  display: 'swap',
+})
 
 export const metadata = {
   metadataBase: new URL('https://www.inkjectortattoos.com'),
@@ -84,7 +100,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${cormorant.variable} ${outfit.variable}`}>
       <body className="antialiased selection:bg-[#C8A45D]/30 selection:text-neutral-900">
         {children}
       </body>

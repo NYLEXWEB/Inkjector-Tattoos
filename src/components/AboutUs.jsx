@@ -20,14 +20,14 @@ export default function AboutUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="relative w-[70%] aspect-[3/4.2] overflow-hidden shadow-xl border border-neutral-200/40 bg-neutral-100"
+                className="relative w-[70%] aspect-[3/4.2] overflow-hidden shadow-xl border border-neutral-200/40 bg-neutral-100 group"
               >
                 <Image
                   src="/images/artist-akhil-saju-atelier-kozhikode.png"
                   alt="Bespoke Tattoo Forearm Art Calicut by Akhil Saju at Inkjector Tattoos"
                   fill
                   sizes="(max-width: 768px) 70vw, 35vw"
-                  className="object-cover grayscale contrast-[1.12]"
+                  className="object-cover grayscale contrast-[1.12] group-hover:grayscale-0 transition-all duration-700 ease-in-out"
                 />
               </motion.div>
 
@@ -37,14 +37,14 @@ export default function AboutUs() {
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true, margin: '-100px' }}
                 transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-                className="absolute -bottom-8 right-0 w-[55%] aspect-square overflow-hidden shadow-2xl border-[6px] sm:border-8 border-white bg-neutral-100 z-10"
+                className="absolute -bottom-8 right-0 w-[55%] aspect-square overflow-hidden shadow-2xl border-[6px] sm:border-8 border-white bg-neutral-100 z-10 group"
               >
                 <Image
                   src="/images/process/tattoo_final.png"
                   alt="Fine Line Custom Tattooing Session Calicut at Inkjector Tattoos Kozhikode"
                   fill
                   sizes="(max-width: 768px) 55vw, 27vw"
-                  className="object-cover grayscale contrast-[1.08] brightness-[0.95]"
+                  className="object-cover grayscale contrast-[1.08] brightness-[0.95] group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 ease-in-out"
                 />
               </motion.div>
 

@@ -45,9 +45,9 @@ export default function JsonLd({ type = 'all' }) {
     "@id": "https://www.inkjectortattoos.com/#localbusiness",
     "name": "Inkjector Tattoos",
     "image": [
-      "https://www.inkjectortattoos.com/images/gallery/sacred-geometry-sleeve-tattoo-kerala.png",
-      "https://www.inkjectortattoos.com/images/gallery/realistic-forearm-tattoo-calicut.png",
-      "https://www.inkjectortattoos.com/images/gallery/custom-geometric-tattoo-kozhikode.png"
+      "https://www.inkjectortattoos.com/images/gallery/sacred-geometry-sleeve-tattoo-kerala.jpg",
+      "https://www.inkjectortattoos.com/images/gallery/classical-greek-portrait-tattoo.jpg",
+      "https://www.inkjectortattoos.com/images/gallery/neo-geometric-forearm-sleeve-tattoo.jpg"
     ],
     "url": "https://www.inkjectortattoos.com",
     "telephone": "+918086612111",
