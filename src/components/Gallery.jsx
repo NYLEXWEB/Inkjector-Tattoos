@@ -36,13 +36,6 @@ const galleryItems = [
     desc: 'Stunning black and grey realism capturing detailed classical expressions and smooth gradients.',
   },
   {
-    id: 5,
-    category: 'Blackwork',
-    title: 'Mandala Sacred Alignment',
-    img: '/images/gallery/mandala-dotwork-backwork-tattoo.jpg',
-    desc: 'Bold blackwork mandala custom-fit to natural body anatomy with high contrast shading.',
-  },
-  {
     id: 6,
     category: 'Custom',
     title: 'Abstract Geometric Shading',
