@@ -1,6 +1,8 @@
 import React from 'react'
 import ClientLayout from '@/components/ClientLayout'
 
+import dynamic from 'next/dynamic'
+
 // Subcomponents
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
@@ -12,13 +14,15 @@ import Gallery from '@/components/Gallery'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import Process from '@/components/Process'
 import Reviews from '@/components/Reviews'
-import FAQ from '@/components/FAQ'
-import Contact from '@/components/Contact'
-import MapSection from '@/components/MapSection'
-import InstagramShowcase from '@/components/InstagramShowcase'
-import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
 import FloatingWhatsapp from '@/components/FloatingWhatsapp'
+
+// Dynamically import below-the-fold components to reduce initial bundle size (SSR: true preserves SEO indexing)
+const FAQ = dynamic(() => import('@/components/FAQ'), { ssr: true })
+const Contact = dynamic(() => import('@/components/Contact'), { ssr: true })
+const MapSection = dynamic(() => import('@/components/MapSection'), { ssr: true })
+const InstagramShowcase = dynamic(() => import('@/components/InstagramShowcase'), { ssr: true })
+const FinalCTA = dynamic(() => import('@/components/FinalCTA'), { ssr: true })
 
 // JSON-LD Schemas
 import JsonLd from '@/components/SEO/JsonLd'

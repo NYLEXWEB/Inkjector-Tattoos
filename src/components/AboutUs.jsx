@@ -23,7 +23,7 @@ export default function AboutUs() {
                 className="relative w-[70%] aspect-[3/4.2] overflow-hidden shadow-xl border border-neutral-200/40 bg-neutral-100 group"
               >
                 <Image
-                  src="/images/about/color tattoo.jpg"
+                  src="/images/about/vibrant-color-blend-tattoo.jpg"
                   alt="Bespoke Tattoo Forearm Art Calicut by Akhil Saju at Inkjector Tattoos"
                   fill
                   sizes="(max-width: 768px) 70vw, 35vw"
@@ -40,7 +40,7 @@ export default function AboutUs() {
                 className="absolute -bottom-8 right-0 w-[55%] aspect-square overflow-hidden shadow-2xl border-[6px] sm:border-8 border-white bg-neutral-100 z-10 group"
               >
                 <Image
-                  src="/images/about/miniature.webp"
+                  src="/images/about/miniature-detailed-micro-tattoo.webp"
                   alt="Fine Line Custom Tattooing Session Calicut at Inkjector Tattoos Kozhikode"
                   fill
                   sizes="(max-width: 768px) 55vw, 27vw"

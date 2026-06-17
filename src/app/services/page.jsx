@@ -1,12 +1,14 @@
 import React from 'react'
 import ClientLayout from '@/components/ClientLayout'
+import dynamic from 'next/dynamic'
 import Navbar from '@/components/Navbar'
 import Specialization from '@/components/Specialization'
 import Process from '@/components/Process'
-import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
 import FloatingWhatsapp from '@/components/FloatingWhatsapp'
 import BreadcrumbSchema from '@/components/SEO/BreadcrumbSchema'
+
+const FAQ = dynamic(() => import('@/components/FAQ'), { ssr: true })
 
 export const metadata = {
   title: 'Professional Tattoo Services Kozhikode | Custom & Cover-Up Tattoos Kerala',

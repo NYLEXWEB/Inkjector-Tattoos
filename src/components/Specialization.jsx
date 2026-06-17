@@ -11,37 +11,37 @@ const specialties = [
     num: '01',
     title: 'Portrait',
     desc: 'Detailed, lifelike portraiture capturing human expressions, classical busts, and realistic details with rich gradients.',
-    img: '/images/gallery/portrait.jpg',
+    img: '/images/gallery/custom-realism-portrait-tattoo.jpg',
   },
   {
     num: '02',
     title: 'Realism',
     desc: 'Hyper-realistic portraiture and organic textures translated beautifully on skin with natural depth and smooth gradients.',
-    img: '/images/gallery/realism.jpg',
+    img: '/images/gallery/hyper-realistic-custom-tattoo.jpg',
   },
   {
     num: '03',
     title: 'Minimal Tattoos',
     desc: 'Fine-line botanical branches, geometric symbols, and delicate single-needle art that feel highly artistic and weightless.',
-    img: '/images/gallery/minimal tattoo.webp',
+    img: '/images/gallery/fineline-dragonfly-minimal-tattoo.webp',
   },
   {
     num: '04',
     title: 'Colour Tattoo',
     desc: 'Vibrant and expressive designs utilizing custom color palettes, smooth blending, and saturated ink to bring art to life.',
-    img: '/images/about/color tattoo.jpg',
+    img: '/images/about/vibrant-color-blend-tattoo.jpg',
   },
   {
     num: '05',
     title: 'Miniature',
     desc: 'Tiny, highly detailed micro-designs, small fine-line symbols, and delicate minimalist art with clean execution.',
-    img: '/images/about/miniature.webp',
+    img: '/images/about/miniature-detailed-micro-tattoo.webp',
   },
   {
     num: '06',
     title: 'Sleeve Tattoos',
     desc: 'Large-scale cohesive artwork spanning full limbs, engineered with precise anatomical flow and thematic continuity.',
-    img: '/images/gallery/IMG-20260617-WA0096.jpg',
+    img: '/images/gallery/best-custom-sleeve-tattoo-kozhikode.jpg',
   },
 ]
 
