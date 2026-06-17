@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { Menu } from 'lucide-react'
 import { Button } from './ui/button'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
+import { motion } from 'framer-motion'
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -42,25 +43,25 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between">
           
-          <Link href="/" className="flex flex-col items-center gap-1.5 group">
+          <Link href="/" className="flex flex-col items-center gap-1 group">
             <Image
               src="/logo.png"
               alt="Inkjector Tattoos Logo"
-              width={40}
-              height={40}
+              width={32}
+              height={32}
               priority
               loading="eager"
-              className="h-8 sm:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-6 sm:h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
-            <div className="flex flex-col items-center pt-0.5">
-              <div className="flex items-center font-serif text-[13px] sm:text-base tracking-[0.15em] sm:tracking-[0.2em] leading-none font-semibold">
+            <div className="flex flex-col items-center">
+              <div className="flex items-center font-serif text-[11px] sm:text-[13px] tracking-[0.15em] sm:tracking-[0.2em] leading-none font-bold">
                 <span className="text-neutral-900">Inkjector</span>
                 <span className="text-[#C8A45D] ml-1">Tattoos</span>
               </div>
-              <div className="flex items-center justify-center w-full gap-1 mt-1 sm:mt-1.5 pointer-events-none">
-                <div className="h-[1px] w-8 sm:w-12 bg-gradient-to-r from-transparent via-[#C8A45D]/40 to-[#C8A45D]/40"></div>
-                <span className="text-[5px] sm:text-[6px] text-[#C8A45D] leading-none">✦</span>
-                <div className="h-[1px] w-8 sm:w-12 bg-gradient-to-l from-transparent via-[#C8A45D]/40 to-[#C8A45D]/40"></div>
+              <div className="flex items-center justify-center w-full gap-1 mt-0.5 sm:mt-1 pointer-events-none">
+                <div className="h-[1px] w-6 sm:w-10 bg-gradient-to-r from-transparent via-[#C8A45D]/40 to-[#C8A45D]/40"></div>
+                <span className="text-[4px] sm:text-[5px] text-[#C8A45D] leading-none">✦</span>
+                <div className="h-[1px] w-6 sm:w-10 bg-gradient-to-l from-transparent via-[#C8A45D]/40 to-[#C8A45D]/40"></div>
               </div>
             </div>
           </Link>
@@ -110,31 +111,42 @@ export default function Navbar() {
                     className="h-10 w-auto object-contain self-start"
                   />
                   <div className="flex flex-col gap-6">
-                    {navItems.map((item) => (
-                      <Link
+                    {navItems.map((item, index) => (
+                      <motion.div
                         key={item.label}
-                        href={item.href}
-                        onClick={() => setIsOpen(false)}
-                        className="text-sm uppercase tracking-[0.2em] font-semibold text-neutral-900 hover:text-[#C8A45D] transition-colors"
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={isOpen ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+                        transition={{ duration: 0.35, delay: index * 0.04, ease: [0.16, 1, 0.3, 1] }}
                       >
-                        {item.label}
-                      </Link>
+                        <Link
+                          href={item.href}
+                          onClick={() => setIsOpen(false)}
+                          className="text-sm uppercase tracking-[0.2em] font-semibold text-neutral-900 hover:text-[#C8A45D] transition-colors block"
+                        >
+                          {item.label}
+                        </Link>
+                      </motion.div>
                     ))}
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+                  transition={{ duration: 0.45, delay: navItems.length * 0.04 + 0.1, ease: [0.16, 1, 0.3, 1] }}
+                  className="flex flex-col gap-4"
+                >
                   <Link
                     href="/contact"
                     onClick={() => setIsOpen(false)}
-                    className="w-full text-center py-4 bg-neutral-950 text-white text-xs uppercase tracking-[0.25em] font-bold hover:bg-[#C8A45D] transition-colors"
+                    className="w-full text-center py-3.5 bg-neutral-950 text-white text-[10px] uppercase tracking-[0.25em] font-bold hover:bg-[#C8A45D] transition-colors rounded-full"
                   >
                     Book Session
                   </Link>
                   <div className="text-[10px] text-neutral-400 tracking-wider text-center">
                     +91 80866 12111 | inkjectortattoos@gmail.com
                   </div>
-                </div>
+                </motion.div>
               </SheetContent>
             </Sheet>
           </div>
