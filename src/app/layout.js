@@ -99,8 +99,56 @@ export const viewport = {
 }
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'TattooParlor',
+    'name': 'Inkjector Tattoos',
+    'image': 'https://www.inkjectortattoos.com/hero-section.png',
+    '@id': 'https://www.inkjectortattoos.com/#studio',
+    'url': 'https://www.inkjectortattoos.com',
+    'telephone': '+918086612111',
+    'priceRange': '₹₹₹',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': 'Kozhikode Bypass Road',
+      'addressLocality': 'Kozhikode',
+      'addressRegion': 'Kerala',
+      'postalCode': '673001',
+      'addressCountry': 'IN'
+    },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': 11.261685,
+      'longitude': 75.877028
+    },
+    'openingHoursSpecification': {
+      '@type': 'OpeningHoursSpecification',
+      'dayOfWeek': [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday'
+      ],
+      'opens': '10:00',
+      'closes': '20:00'
+    },
+    'sameAs': [
+      'https://www.instagram.com/inkjectortattoos',
+      'https://www.google.com/search?q=INKJECTOR+TATTOOS'
+    ]
+  }
+
   return (
     <html lang="en" className={`${cormorant.variable} ${outfit.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="antialiased selection:bg-[#C8A45D]/30 selection:text-neutral-900">
         {children}
       </body>
