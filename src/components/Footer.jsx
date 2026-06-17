@@ -17,23 +17,23 @@ export default function Footer() {
           
           {/* Column 1: Logo & Philosophy */}
           <div className="lg:col-span-5 text-left space-y-6">
-            <Link href="/" className="flex items-center gap-3 group">
+            <Link href="/" className="flex flex-col items-center gap-2 group w-fit">
               <Image
                 src="/logo.png"
                 alt="Inkjector Tattoos Logo"
-                width={44}
-                height={44}
-                className="h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                width={40}
+                height={40}
+                className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
               <div className="flex flex-col items-center pt-0.5">
-                <div className="flex items-center font-serif text-[14px] tracking-[0.25em] uppercase leading-none font-semibold">
+                <div className="flex items-center font-serif text-[12px] tracking-[0.2em] uppercase leading-none font-semibold">
                   <span className="text-neutral-900">Inkjector</span>
-                  <span className="text-[#C8A45D] ml-1.5">Tattoos</span>
+                  <span className="text-[#C8A45D] ml-1">Tattoos</span>
                 </div>
-                <div className="flex items-center justify-center w-full gap-1.5 mt-1.5 pointer-events-none">
-                  <div className="h-[1px] w-12 bg-gradient-to-r from-transparent via-[#C8A45D]/40 to-[#C8A45D]/40"></div>
-                  <span className="text-[6px] text-[#C8A45D] leading-none">✦</span>
-                  <div className="h-[1px] w-12 bg-gradient-to-l from-transparent via-[#C8A45D]/40 to-[#C8A45D]/40"></div>
+                <div className="flex items-center justify-center w-full gap-1 mt-1 pointer-events-none">
+                  <div className="h-[1px] w-8 bg-gradient-to-r from-transparent via-[#C8A45D]/40 to-[#C8A45D]/40"></div>
+                  <span className="text-[5px] text-[#C8A45D] leading-none">✦</span>
+                  <div className="h-[1px] w-8 bg-gradient-to-l from-transparent via-[#C8A45D]/40 to-[#C8A45D]/40"></div>
                 </div>
               </div>
             </Link>

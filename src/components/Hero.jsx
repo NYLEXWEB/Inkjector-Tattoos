@@ -36,10 +36,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="flex items-center gap-3 mb-4"
           >
-            <span className="w-8 h-[1px] bg-[#C8A45D]"></span>
-            <span className="text-[11px] font-semibold tracking-[0.3em] text-[#C8A45D] uppercase">
-              PREMIUM TATTOO STUDIO
-            </span>
+          
           </motion.div>
 
           {/* Massive Heading */}
