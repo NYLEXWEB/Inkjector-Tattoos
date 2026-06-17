@@ -9,118 +9,132 @@ import { Dialog, DialogContent } from './ui/dialog'
 const galleryItems = [
   {
     id: 1,
+    category: 'Portrait',
+    title: 'Custom Portrait Realism',
+    img: '/images/gallery/portrait.jpg',
+    desc: 'Hyper-realistic custom portrait tattoo showcasing refined shading and lifelike detail.',
+  },
+  {
+    id: 2,
+    category: 'Sleeve',
+    title: 'Intricate Sleeve Masterpiece',
+    img: '/images/gallery/IMG-20260617-WA0096.jpg',
+    desc: 'Large-scale custom sleeve tattoo showcasing flowing patterns and cohesive design lines.',
+  },
+  {
+    id: 3,
     category: 'Sleeve',
     title: 'Geometric Flow Sleeve',
     img: '/images/gallery/sacred-geometry-sleeve-tattoo-kerala.jpg',
     desc: 'Intricate custom geometric sleeve tattoo combining detailed line weights and fluid dotwork patterns.',
   },
   {
-    id: 2,
+    id: 4,
     category: 'Portrait',
     title: 'Hyper-Realistic Portrait',
     img: '/images/gallery/classical-greek-portrait-tattoo.jpg',
     desc: 'Stunning black and grey realism capturing detailed classical expressions and smooth gradients.',
   },
   {
-    id: 3,
+    id: 5,
     category: 'Blackwork',
     title: 'Mandala Sacred Alignment',
     img: '/images/gallery/mandala-dotwork-backwork-tattoo.jpg',
     desc: 'Bold blackwork mandala custom-fit to natural body anatomy with high contrast shading.',
   },
   {
-    id: 4,
+    id: 6,
     category: 'Custom',
     title: 'Abstract Geometric Shading',
     img: '/images/gallery/abstract-linework-wrist-tattoo.jpg',
     desc: 'Contemporary custom abstract design blending sharp geometric blocks with organic structures.',
   },
   {
-    id: 5,
+    id: 7,
     category: 'Sleeve',
     title: 'Symmetrical Mandala Sleeve',
     img: '/images/gallery/neo-geometric-forearm-sleeve-tattoo.jpg',
     desc: 'Detailed upper-arm sleeve featuring repeating geometric elements and rich textured dotwork.',
   },
   {
-    id: 6,
+    id: 8,
     category: 'Minimal',
     title: 'Celestial Harmony',
     img: '/images/gallery/ornamental-floral-shoulder-tattoo.jpg',
     desc: 'A clean, minimalist tattoo combining celestial elements and delicate fine-line script.',
   },
   {
-    id: 7,
+    id: 9,
     category: 'Blackwork',
     title: 'Dark Ornamental Mandala',
     img: '/images/gallery/fine-line-lotus-petal-tattoo.jpg',
     desc: 'Intricate ornamental mandala pattern utilizing heavy black saturation and stark contrast borders.',
   },
   {
-    id: 8,
+    id: 10,
     category: 'Custom',
     title: 'Biomechanical Linework',
     img: '/images/gallery/neoclassical-bust-portrait-tattoo.jpg',
     desc: 'Custom futuristic linework engineered to follow muscular curves and anatomical structures.',
   },
   {
-    id: 9,
+    id: 11,
     category: 'Minimal',
     title: 'Patience & Butterfly Script',
     img: '/images/gallery/inkjectortattoos-475992643_18054685910482782_5599277608008926338_n.webp',
     desc: 'A custom fine-line butterfly composition integrated with elegant cursive script and astronomical accents.',
   },
   {
-    id: 10,
+    id: 12,
     category: 'Minimal',
     title: 'Fineline Dragonfly',
     img: '/images/gallery/inkjectortattoos-476812439_18055748084482782_2888204273599214746_n.webp',
     desc: 'A highly delicate and clean fineline dragonfly tattoo demonstrating subtle micro-shading.',
   },
   {
-    id: 11,
+    id: 13,
     category: 'Custom',
     title: 'Watercolor Pawprints',
     img: '/images/gallery/inkjectortattoos-581262885_18084417725482782_7896098216253374777_n.webp',
     desc: 'Vibrant custom watercolor splash tattoo featuring delicate paw prints along the collarbone.',
   },
   {
-    id: 12,
+    id: 14,
     category: 'Custom',
     title: 'Abstract Liquid Butterfly',
     img: '/images/gallery/inkjectortattoos-622207960_17932255863159703_5578428884763831911_n.webp',
     desc: 'Contemporary abstract tattoo fusing organic butterfly wings with fluid dark ink splashes.',
   },
   {
-    id: 13,
+    id: 15,
     category: 'Minimal',
     title: 'Botanical Self-Hug',
     img: '/images/gallery/inkjectortattoos-626532041_18173805367376464_1004012667419886089_n.webp',
     desc: 'Elegant and emotive single-line outline of a self-hug intertwined with leafy botanical branches.',
   },
   {
-    id: 14,
+    id: 16,
     category: 'Blackwork',
     title: 'Swallows Shaded Flight',
     img: '/images/gallery/inkjectortattoos-633661225_18362370412163892_5288682117702006315_n.webp',
     desc: 'Symmetrical traditional shaded swallow tattoos positioned elegantly on the lower calves.',
   },
   {
-    id: 15,
+    id: 17,
     category: 'Piercing',
     title: 'Double Helix Curated Piercing',
     img: '/images/piercing/double-helix-ear-piercing-calicut.png',
     desc: 'Clean curated double helix project utilizing luxury solid gold studs for a sophisticated ear stack.',
   },
   {
-    id: 16,
+    id: 18,
     category: 'Piercing',
     title: 'Precision Septum Clicker',
     img: '/images/piercing/precision-septum-piercing-kerala.png',
     desc: 'Perfect symmetry septum piercing styled with a solid titanium seamless ring.',
   },
   {
-    id: 17,
+    id: 19,
     category: 'Piercing',
     title: 'Curated Helix Placement',
     img: '/images/piercing/curated-tragus-conch-piercing-titanium.png',
@@ -217,16 +231,6 @@ export default function Gallery() {
                       <ZoomIn className="h-5 w-5 text-neutral-900" />
                     </motion.div>
                   </div>
-                </div>
-
-                {/* Text Description Card */}
-                <div className="p-6 bg-white border-t border-neutral-100 text-left">
-                  <span className="text-[9px] uppercase tracking-[0.25em] text-[#C8A45D] font-bold block mb-1">
-                    {item.category}
-                  </span>
-                  <h3 className="font-serif text-xl font-light text-neutral-900 leading-snug">
-                    {item.title}
-                  </h3>
                 </div>
               </motion.div>
             ))}
