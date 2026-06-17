@@ -112,31 +112,10 @@ const galleryItems = [
     img: '/images/gallery/traditional-swallow-blackwork-tattoo.webp',
     desc: 'Symmetrical traditional shaded swallow tattoos positioned elegantly on the lower calves.',
   },
-  {
-    id: 17,
-    category: 'Piercing',
-    title: 'Double Helix Curated Piercing',
-    img: '/images/piercing/double-helix-ear-piercing-calicut.png',
-    desc: 'Clean curated double helix project utilizing luxury solid gold studs for a sophisticated ear stack.',
-  },
-  {
-    id: 18,
-    category: 'Piercing',
-    title: 'Precision Septum Clicker',
-    img: '/images/piercing/precision-septum-piercing-kerala.png',
-    desc: 'Perfect symmetry septum piercing styled with a solid titanium seamless ring.',
-  },
-  {
-    id: 19,
-    category: 'Piercing',
-    title: 'Curated Helix Placement',
-    img: '/images/piercing/curated-tragus-conch-piercing-titanium.png',
-    desc: 'Premium tragus and conch piercing combo featuring custom-selected internally threaded studs.',
-  },
 ]
 
 
-const categories = ['All', 'Sleeve', 'Portrait', 'Minimal', 'Blackwork', 'Custom', 'Piercing']
+const categories = ['All', 'Sleeve', 'Portrait', 'Minimal', 'Blackwork', 'Custom']
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('All')
