@@ -51,6 +51,7 @@ export default function Navbar() {
               height={32}
               priority
               loading="eager"
+              style={{ width: 'auto' }}
               className="h-6 sm:h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
             <div className="flex flex-col items-center">
@@ -108,6 +109,7 @@ export default function Navbar() {
                     height={40}
                     priority
                     loading="eager"
+                    style={{ width: 'auto' }}
                     className="h-10 w-auto object-contain self-start"
                   />
                   <div className="flex flex-col gap-6">

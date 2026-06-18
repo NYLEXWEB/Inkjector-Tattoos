@@ -23,6 +23,7 @@ export default function Footer() {
                 alt="Inkjector Tattoos Logo"
                 width={40}
                 height={40}
+                style={{ width: 'auto' }}
                 className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
               <div className="flex flex-col items-center pt-0.5">

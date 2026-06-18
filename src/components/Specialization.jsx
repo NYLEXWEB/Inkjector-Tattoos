@@ -41,7 +41,7 @@ const specialties = [
     num: '06',
     title: 'Sleeve Tattoos',
     desc: 'Large-scale cohesive artwork spanning full limbs, engineered with precise anatomical flow and thematic continuity.',
-    img: '/images/gallery/best-custom-sleeve-tattoo-kozhikode.jpg',
+    img: '/images/gallery/neo-geometric-forearm-sleeve-tattoo.jpg',
   },
 ]
 

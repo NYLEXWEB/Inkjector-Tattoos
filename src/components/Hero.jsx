@@ -74,7 +74,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
             className="text-neutral-300 text-sm sm:text-base tracking-wide max-w-lg mb-6 leading-relaxed font-light font-sans"
           >
-            Inkjector Tattoos is a high-end private tattoo atelier led by master artist Akhil Saju with{' '}
+            Inkjector Tattoos is a high-end private tattoo atelier led by artist Akhil Saju with{' '}
             <strong className="text-[#C8A45D] font-medium">8+ Years of Professional Experience</strong>. We create handcrafted, custom tattoo art tailored exclusively to your unique identity in Kozhikode, Calicut, Kerala.
           </motion.p>
 
