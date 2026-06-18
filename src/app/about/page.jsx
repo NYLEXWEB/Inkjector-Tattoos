@@ -10,7 +10,7 @@ import BreadcrumbSchema from '@/components/SEO/BreadcrumbSchema'
 
 export const metadata = {
   title: 'About Akhil Saju Atelier | Best Tattoo Artist Kozhikode',
-  description: 'Inkjector Tattoos Calicut is led by certified master artist Akhil Saju with 8+ years of expertise. Learn about our luxury private atelier and medical-grade sterile procedures.',
+  description: 'Inkjector Tattoos Calicut is led by certified artist Akhil Saju with 8+ years of expertise. Learn about our luxury private atelier and medical-grade sterile procedures.',
   keywords: [
     'best tattoo artist kozhikode',
     'tattoo artist calicut',

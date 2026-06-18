@@ -127,7 +127,7 @@ export default function JsonLd({ type = 'all' }) {
         "name": "Can you cover up or restore old tattoos?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we specialize in custom cover-ups. Master artist Akhil Saju analyzes the dark values of your existing tattoo and constructs a new, larger composition—usually incorporating blackwork, solid geometry, or detailed shading—to fully mask the old ink while creating a beautiful new piece."
+          "text": "Yes, we specialize in custom cover-ups. artist Akhil Saju analyzes the dark values of your existing tattoo and constructs a new, larger composition—usually incorporating blackwork, solid geometry, or detailed shading—to fully mask the old ink while creating a beautiful new piece."
         }
       }
     ]

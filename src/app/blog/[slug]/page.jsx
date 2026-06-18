@@ -123,7 +123,7 @@ const blogData = {
         </p>
         <h2>1. Shading Gradients and Contrast</h2>
         <p>
-          Unlike line-heavy styles, realism relies on seamless tonal shifts to create the illusion of three-dimensional depth. Master artists utilize dilution systems to blend solid black into soft silver washes, capturing textures like skin, animal fur, or cold marble.
+          Unlike line-heavy styles, realism relies on seamless tonal shifts to create the illusion of three-dimensional depth. artists utilize dilution systems to blend solid black into soft silver washes, capturing textures like skin, animal fur, or cold marble.
         </p>
         <h2>2. Anatomic Flow and Alignment</h2>
         <p>

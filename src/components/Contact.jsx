@@ -54,7 +54,7 @@ export default function Contact() {
               </p>
               
               <p className="text-neutral-550 text-sm font-light leading-relaxed">
-                Consultations are held by appointment only in our private clinical atelier. Fill out our signature inquiry form to request a concept review with master artist Akhil Saju.
+                Consultations are held by appointment only in our private clinical atelier. Fill out our signature inquiry form to request a concept review with  artist Akhil Saju.
               </p>
             </div>
 

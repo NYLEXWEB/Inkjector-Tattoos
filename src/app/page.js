@@ -29,7 +29,7 @@ import JsonLd from '@/components/SEO/JsonLd'
 
 export const metadata = {
   title: 'Inkjector Tattoos | Premium Tattoo Studio in Kozhikode Kerala',
-  description: 'Inkjector Tattoos is a high-end luxury tattoo studio led by master artist Akhil Saju in Kozhikode (Calicut), Kerala. We specialize in custom-tailored realism, geometric blackwork, fine-line, and safe cover-up tattoos in a sterile, private atelier.',
+  description: 'Inkjector Tattoos is a high-end luxury tattoo studio led by artist Akhil Saju in Kozhikode (Calicut), Kerala. We specialize in custom-tailored realism, geometric blackwork, fine-line, and safe cover-up tattoos in a sterile, private atelier.',
   keywords: [
     'tattoo studio kozhikode',
     'best tattoo studio kozhikode',

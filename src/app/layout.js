@@ -22,7 +22,7 @@ export const metadata = {
     default: 'Inkjector Tattoos | Premium Tattoo Studio in Kozhikode Kerala',
     template: '%s | Inkjector Tattoos'
   },
-  description: 'Inkjector Tattoos is a high-end luxury tattoo studio led by master artist Akhil Saju in Kozhikode (Calicut), Kerala. We specialize in custom-tailored realism, geometric blackwork, fine-line, and safe cover-up tattoos in a clinical, zen-like private atelier.',
+  description: 'Inkjector Tattoos is a high-end luxury tattoo studio led by artist Akhil Saju in Kozhikode (Calicut), Kerala. We specialize in custom-tailored realism, geometric blackwork, fine-line, and safe cover-up tattoos in a clinical, zen-like private atelier.',
   keywords: [
     'tattoo studio kozhikode',
     'best tattoo studio kozhikode',
@@ -64,7 +64,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Inkjector Tattoos | Premium Tattoo Studio in Kozhikode Kerala',
-    description: 'Bespoke private tattoo studio led by master artist Akhil Saju. We specialize in custom-tailored blackwork, realism, and fine-line tattoos in a clinical, zen-like private atelier in Kozhikode, Kerala.',
+    description: 'Bespoke private tattoo studio led by artist Akhil Saju. We specialize in custom-tailored blackwork, realism, and fine-line tattoos in a clinical, zen-like private atelier in Kozhikode, Kerala.',
     url: 'https://www.inkjectortattoos.com',
     siteName: 'Inkjector Tattoos',
     locale: 'en_US',
@@ -81,7 +81,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Inkjector Tattoos | Premium Tattoo Studio in Kozhikode Kerala',
-    description: 'Bespoke private tattoo studio led by master artist Akhil Saju in Kozhikode, Kerala.',
+    description: 'Bespoke private tattoo studio led by artist Akhil Saju in Kozhikode, Kerala.',
     images: ['https://www.inkjectortattoos.com/hero-section.png']
   },
   other: {

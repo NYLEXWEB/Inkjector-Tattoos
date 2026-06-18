@@ -19,7 +19,7 @@ export default function AboutArtist() {
             Akhil Saju
           </h2>
           <p className="text-xs uppercase tracking-[0.25em] text-neutral-400 mt-2">
-            Founder & Master Artist | 8+ Years Experience
+            Founder & Artist | 8+ Years Experience
           </p>
         </div>
 
